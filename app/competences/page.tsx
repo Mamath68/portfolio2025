@@ -1,6 +1,6 @@
 "use client";
 
-import React, { Component } from "react";
+import { Component } from "react";
 import SkillCard from "@/app/competences/SkillCard";
 import AOS from "aos";
 import "aos/dist/aos.css";

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { Component } from "react";
+import { Component } from "react";
 import { usePathname } from "next/navigation";
 import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
@@ -18,7 +18,6 @@ function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(" ");
 }
 
-// ✅ CLASSE : Gère l'affichage de la navbar
 class NavbarComponent extends Component<{ pathname: string }> {
     render() {
         const { pathname } = this.props;

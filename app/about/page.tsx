@@ -8,12 +8,10 @@ import {
     PhoneIcon
 } from "@heroicons/react/24/outline";
 
-// Interface des props pour le calcul de l'âge
 interface MyAgeProps {
     dateOfBirth: string;
 }
 
-// Composant pour afficher l'âge calculé
 class MyAge extends Component<MyAgeProps> {
     calculateAge(dateOfBirth: string): number {
         const [day, month, year] = dateOfBirth.split("/");
@@ -36,12 +34,10 @@ class MyAge extends Component<MyAgeProps> {
     }
 }
 
-// Interface du state pour About (si besoin d'ajouter un état plus tard)
 interface AboutState {
     dateOfBirth: string;
 }
 
-// Composant principal About
 class About extends Component<Record<string, never>, AboutState> {
     constructor(props: Record<string, never>) {
         super(props);

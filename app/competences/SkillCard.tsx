@@ -15,6 +15,7 @@ class SkillCard extends Component<Props> {
                 <Image
                     src={image}
                     alt={title}
+                    title={title}
                     width={80}
                     height={80}
                     className="object-contain mx-auto"
