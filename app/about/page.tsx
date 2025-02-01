@@ -1,5 +1,5 @@
 "use client";
-import React, {Component} from "react";
+import React, { Component } from "react";
 import {
     CalendarIcon,
     MapIcon,
@@ -29,15 +29,11 @@ class MyAge extends Component<MyAgeProps> {
     }
 
     render() {
-        const {dateOfBirth} = this.props;
+        const { dateOfBirth } = this.props;
         const age = this.calculateAge(dateOfBirth);
 
         return <p className="text-white text-[18px]">{dateOfBirth} ({age} ans)</p>;
     }
-}
-
-// Interface des props pour le composant About
-interface AboutProps {
 }
 
 // Interface du state pour About (si besoin d'ajouter un état plus tard)
@@ -46,8 +42,8 @@ interface AboutState {
 }
 
 // Composant principal About
-class About extends Component<AboutProps, AboutState> {
-    constructor(props: AboutProps) {
+class About extends Component<{}, AboutState> {
+    constructor(props: {}) {
         super(props);
         this.state = {
             dateOfBirth: "12/02/1998",
@@ -55,7 +51,7 @@ class About extends Component<AboutProps, AboutState> {
     }
 
     render() {
-        const {dateOfBirth} = this.state;
+        const { dateOfBirth } = this.state;
 
         return (
             <div className="w-full">
