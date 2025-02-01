@@ -42,8 +42,8 @@ interface AboutState {
 }
 
 // Composant principal About
-class About extends Component<{}, AboutState> {
-    constructor(props: {}) {
+class About extends Component<Record<string, never>, AboutState> {
+    constructor(props: Record<string, never>) {
         super(props);
         this.state = {
             dateOfBirth: "12/02/1998",
